@@ -1030,7 +1030,9 @@ fn main() {
 
     // Basic system initialization (order is important here).
     configure_environment();
+    println!("YGYG envir set complete");
     configure_hostname();
+    println!("{hostname set complete}");
     mount_kernel_filesystems();
     mount_cgroupfs();
     configure_limits();
